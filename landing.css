@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    background-color: #F4F4F9;
+}
+
+div {
+    border: solid 1px black;
+}
+
+header {
+    height: 130px;
+    background-color: #2F4550;
+}
+
+.hero {
+    height: 1000px;
+}
+
+.features {
+    height: 1560px;
+    background-color: #586F7C;
+}
+
+.howitworks {
+    height: 930px;
+}
+
+.testimonial {
+    height: 550px;
+    background-color: #586F7C;
+}
+
+.pricing {
+    height: 800px;
+}
+
+footer {
+    height: 480px;
+    background-color: black;
+}
