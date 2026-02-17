@@ -11,6 +11,45 @@ div {
 header {
     height: 10vh;
     background-color: #2F4550;
+    color: #F4F4F9;
+
+    align-content: center;
+}
+
+.header_container {
+    width: 90%;
+    height: 50%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#header_titulo {
+    width: 100px;
+    align-content: center;
+}
+
+#header_nav {
+    width: 40%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.header_nav_item {
+    width: 25%;
+    height: 100%;
+
+    align-content: center;
+}
+
+a.header_nav_link {
+    margin: auto;
+    
+    color: #F4F4F9;
+    text-decoration: none;
 }
 
 .hero {
