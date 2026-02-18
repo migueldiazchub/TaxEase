@@ -107,6 +107,7 @@ h2#hero_subtitulo {
 }
 
 p {
+    font-size: 24px;
     margin-top: 0;
 }
 
@@ -119,7 +120,6 @@ strong {
     background-color: #586F7C;
     
     color: #F4F4F9;
-    font-size: 24px;
     
     position: relative;
     align-content: center;
@@ -202,15 +202,64 @@ strong {
     background-position: center;
 }
 
-
 .feat_tarjeta_texto {
     height: 20%;
     width: 100%;
 }
 
-
 .howitworks {
-    height: 930px;
+    height: 17%;
+
+    align-content: center;
+}
+
+.howitworks_caja {
+    height: 75%;
+    width: 74%;
+
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.howitworks_texto {
+    height: 87%;
+    width: 44%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.howitworks_texto_titulo {
+    width: 100%;
+}
+
+.howitworks_texto_lista {
+    height: 84%;
+    width: 82%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.howitworks_punto_texto {
+    color: #828282;
+}
+
+.howitworks_imagen {
+    height: 100%;
+    width: 46%;
+    border-radius: 10px;
+
+    background-image: url(imagenes/tablets-conectados.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .testimonial {
@@ -225,6 +274,7 @@ strong {
 h2.titulo_seccion {
     font-size: 48px;
     font-weight: 600;
+    margin: 0 auto;
 }
 
 h2#features_titulo {
