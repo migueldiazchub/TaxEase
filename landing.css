@@ -263,8 +263,82 @@ strong {
 }
 
 .testimonial {
-    height: 550px;
+    height: 10%;
     background-color: #586F7C;
+
+    position: relative;
+}
+
+.testimonial_titulo {
+    text-align: center;
+
+    position: relative;
+    top: 16%;
+}
+
+.testimonial_caja {
+    height: 42%;
+    width: 87%;
+
+    margin: auto;
+    position: relative;
+    top: 28%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.testimonial_tarjeta {
+    height: 100%;
+    width: 32%;
+
+    align-content: center;
+
+    background-color: #98BBC9;
+    border-radius: 10px;
+}
+
+.testimonial_content {
+    height: 72%;
+    width: 88%;
+
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial_content_cita {
+    height: 42%;
+
+    font-weight: 500;
+}
+
+.testimonial_content_persona {
+    height: 29%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.testimonial_persona_imagen {
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+}
+
+.testimonial_persona_nombre {
+    margin-left: 16px;
+}
+
+p.testimonial_textonombre {
+    font-size: 16px;
+    font-weight: 500;
+
+    margin-bottom: 7px;
 }
 
 .pricing {
