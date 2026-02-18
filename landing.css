@@ -1,4 +1,6 @@
 body {
+    height: 5450px;
+    
     margin: 0;
     background-color: #F4F4F9;
     font-family: "Inter", sans-serif;
@@ -9,7 +11,7 @@ div {
 }
 
 header {
-    height: 10vh;
+    height: 2%;
     background-color: #2F4550;
     color: #F4F4F9;
 
@@ -53,7 +55,7 @@ a.header_nav_link {
 }
 
 .hero {
-    height: 90vh;
+    height: 18%;
     align-content: center;
 }
 
@@ -67,6 +69,8 @@ a.header_nav_link {
 .hero_imagen {
     width: 100%;
     height: 100%;
+    border-radius: 10px;
+
     position: absolute;
     z-index: -5;
 
@@ -102,10 +106,108 @@ h2#hero_subtitulo {
     margin: 0;
 }
 
-.features {
-    height: 1560px;
-    background-color: #586F7C;
+p {
+    margin-top: 0;
 }
+
+strong {
+    font-weight: 600;
+}
+
+.features {
+    height: 28%;
+    background-color: #586F7C;
+    
+    color: #F4F4F9;
+    font-size: 24px;
+    
+    position: relative;
+    align-content: center;
+}
+
+.feat_valueprop {
+    height: 45%;
+    width: 67%;
+    
+    position: relative;
+    margin: auto;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.valueprop_titulo {
+    height: 8%;
+}
+
+.valueprop_imagen {
+    height: 65%;
+    border-radius: 10px;
+
+    background-image: url(imagenes/stonks.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.valueprop_texto {
+    height: 16%;
+    
+    text-align: end;
+}
+
+.feat_features {
+    height: 35%;
+    width: 88%;
+    
+    position: relative;
+    margin: auto;
+    margin-top: 3%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.feat_tarjeta {
+    height: 100%;
+    width: 32%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.feat_tarjeta_imagen {
+    height: 75%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#feat_img_izq {
+    background-image: url(imagenes/movil-scan.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#feat_img_cen {
+    background-image: url(imagenes/factura-movil-portatil.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#feat_img_der {
+    background-image: url(imagenes/banco-online.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.feat_tarjeta_texto {
+    height: 20%;
+    width: 100%;
+}
+
 
 .howitworks {
     height: 930px;
@@ -118,6 +220,16 @@ h2#hero_subtitulo {
 
 .pricing {
     height: 800px;
+}
+
+h2.titulo_seccion {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+h2#features_titulo {
+    text-align: center;
+    margin: 0 auto;
 }
 
 footer {
