@@ -8,10 +8,6 @@ body {
     font-family: "Inter", sans-serif;
 }
 
-div {
-    border: solid 1px black;
-}
-
 header {
     height: 2%;
     background-color: #2F4550;
@@ -74,6 +70,7 @@ button {
     height: 100%;
     width: 100%;
     border-radius: 10px;
+    border: 1px solid black;
 
     background-color: #98BBC9;
 
@@ -87,13 +84,17 @@ button:hover {
 .hero {
     height: 18%;
     align-content: center;
+    position: relative;
 }
 
 .hero_caja {
     width: 90%;
     height: 80%;
     margin: auto;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .hero_imagen {
