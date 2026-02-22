@@ -1,3 +1,5 @@
+/* 5450px para poner en píxeles, 440vh para ponerlo en referencia al viewport height de mi monitor*/
+
 body {
     height: 5450px;
     
@@ -52,6 +54,14 @@ a.header_nav_link {
     
     color: #F4F4F9;
     text-decoration: none;
+}
+
+button {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+
+    background-color: #98BBC9;
 }
 
 .hero {
@@ -342,7 +352,129 @@ p.testimonial_textonombre {
 }
 
 .pricing {
-    height: 800px;
+    height: 15%;
+
+   align-content: center; 
+}
+
+.pricing_caja {
+    height: 81%;
+
+    margin: auto;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pricing_opciones {
+    height: 65%;
+    width: 77%;
+
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pricing_tarjeta {
+    height: 100%;
+    width: 30%;
+
+    background-color: white;
+    border-radius: 10px;
+
+    position: relative;
+}
+
+#pricing_tarjeta_medio {
+    background-color: #586F7C;
+    color: white;
+}
+
+.pricing_tarjeta_arriba {
+    height: 23%;
+    width: 33%;
+
+    margin: auto;
+    margin-top: 7%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pricing_tarjeta_nombre {
+    height: 33%;
+
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.pricing_tarjeta_precio {
+    height: 55%;
+    width: 150%;
+
+    text-align: center;
+}
+
+.precio_euro {
+    vertical-align: super;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.precio_precio {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.precio_mes {
+    vertical-align: sub;
+    font-size: 14px;
+}
+
+.pricing_tarjeta_lista {
+    width: 85%;
+
+    margin: auto;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+.pricing_tarjeta_boton {
+    height: 9%;
+    width: 100%;
+
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    position: absolute;
+    top: 83%;
+}
+
+.pricing_boton_contratar {
+    width: 85%;
+    
+    font-size: 20px;
+}
+
+#pruebagrat_boton {
+    background-color: #2F4550;
+    color: white;
+    font-size: 24px;
+}
+
+.pricing_pruebagrat {
+    height: 8%;
+    width: 27%;
 }
 
 h2.titulo_seccion {
