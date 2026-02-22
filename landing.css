@@ -76,6 +76,12 @@ button {
     border-radius: 10px;
 
     background-color: #98BBC9;
+
+    transition: background-color 0.5s
+}
+
+button:hover {
+    background-color: #F4F4F9;
 }
 
 .hero {
@@ -484,6 +490,13 @@ li {
     background-color: #2F4550;
     color: white;
     font-size: 24px;
+
+    transition: background-color 0.5s, color 0.5s;
+}
+
+#pruebagrat_boton:hover {
+    background-color: #98BBC9;
+    color: black;
 }
 
 .pricing_pruebagrat {
@@ -566,4 +579,13 @@ img.iconos_redes {
 .footer_grid_elemento {
     font-size: 16px;
     font-weight: 500;
+}
+
+a.footer_link {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration-line: underline;
 }
