@@ -14,6 +14,8 @@ header {
     color: #F4F4F9;
 
     align-content: center;
+
+    @media (width < 769px) { height: 1%; }
 }
 
 .header_container {
@@ -85,6 +87,8 @@ button:hover {
     height: 18%;
     align-content: center;
     position: relative;
+
+    @media (width < 769px) { min-height: 0%; max-height: 5%;}
 }
 
 .hero_caja {
@@ -95,6 +99,8 @@ button:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @media (width < 769px) { min-height: 0%; max-height: 80%;}
 }
 
 .hero_imagen {
@@ -120,6 +126,15 @@ button:hover {
 
     display: flex;
     flex-direction: column;
+
+    text-shadow: 0 0 3px white;
+
+    @media (width < 769px) { 
+        margin: auto;
+        height: 100%; 
+        justify-content: center; 
+        align-items: center; 
+    }
 }
 
 .hero_titulo_elemento {
@@ -129,12 +144,16 @@ button:hover {
 h1 {
     font-size: 128px;
     margin: 0;
+
+    @media (width < 769px) { font-size: 64px; }
 }
 
 h2#hero_subtitulo {
     font-size: 48px;
     font-weight: normal;
     margin: 0;
+
+    @media (width < 769px) { font-size: 24px; }
 }
 
 p {
