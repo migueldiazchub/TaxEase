@@ -493,32 +493,49 @@ p.testimonial_textonombre {
 }
 
 .pricing {
-    height: 15%;
+   height: 15%;
 
    align-content: center; 
-   text-align: center;
+
+   @media (width < 769px) {
+    height: 20%;
+   }
 }
 
 .pricing_caja {
     height: 81%;
-
+    
     margin: auto;
     
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+    @media (width < 769px) {
+        height: 90%;
+    }
+}
+
+.pricing_titulo {
+    text-align: center;
 }
 
 .pricing_opciones {
     height: 65%;
     width: 77%;
 
-    margin: auto;
+    margin: 0 auto;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @media (width < 769px) {
+        flex-direction: column;
+
+        height: 80%;
+    }
 }
 
 .pricing_tarjeta {
@@ -529,6 +546,11 @@ p.testimonial_textonombre {
     border-radius: 10px;
 
     position: relative;
+
+    @media (width < 769px) {
+        height: 30%;
+        width: 100%;
+    }
 }
 
 #pricing_tarjeta_medio {
@@ -538,7 +560,7 @@ p.testimonial_textonombre {
 
 .pricing_tarjeta_arriba {
     height: 23%;
-    width: 33%;
+    width: 100%;
 
     margin: auto;
     margin-top: 7%;
@@ -547,6 +569,16 @@ p.testimonial_textonombre {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+    @media (width < 769px) {
+        width: 80%;
+
+        margin-top: 3%;
+        
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .pricing_tarjeta_nombre {
@@ -554,43 +586,81 @@ p.testimonial_textonombre {
 
     font-size: 24px;
     font-weight: 600;
+
+    @media (width < 769px) {
+        height: 55%;
+
+        font-size: 18px;
+    }
 }
 
 .pricing_tarjeta_precio {
     height: 55%;
-    width: 150%;
+    margin: auto;
 
     text-align: center;
-}
 
-.precio_euro {
-    vertical-align: super;
-    font-size: 24px;
-    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
-    position: relative;
-    top: -15px;
-    left: -2px;
+    @media (width < 769px) {
+        margin: 0;
+        margin-right: 6%;
+    }
 }
 
 .precio_precio {
     font-size: 48px;
     font-weight: bold;
+    
+    anchor-name: --cifra_precio
+}
+
+.precio_euro {
+    font-size: 24px;
+    font-weight: bold;
+
+    position: absolute;
+    position-anchor: --cifra_precio;
+    top: anchor(top);
+    right: anchor(left);
 }
 
 .precio_mes {
-    vertical-align: sub;
     font-size: 14px;
+
+    position: absolute;
+    position-anchor: --cifra_precio;
+    bottom: anchor(bottom);
+    left: anchor(right);
+}
+
+@media (width < 769px) {
+    .precio_euro { font-size: 12px; }
+    .precio_precio { font-size: 24px}
+    .precio_mes { font-size: 7px}
 }
 
 .pricing_tarjeta_lista {
     width: 85%;
 
     margin: auto;
+
+    @media (width < 769px) {
+        width: 95%;
+
+        position: relative;
+        top: -7%;
+    }
 }
 
 li {
     margin-bottom: 12px;
+
+    @media (width < 769px){
+        font-size: 14px;
+    }
 }
 
 .pricing_tarjeta_boton {
@@ -604,6 +674,12 @@ li {
 
     position: absolute;
     top: 83%;
+
+    @media (width < 769px) {
+        height: 14%;
+
+        top: 78%;
+    }
 }
 
 .pricing_boton_contratar {
@@ -618,6 +694,10 @@ li {
     font-size: 24px;
 
     transition: background-color 0.5s, color 0.5s;
+
+    @media (width < 769px) {
+        font-size: 18px;
+    }
 }
 
 #pruebagrat_boton:hover {
@@ -628,6 +708,11 @@ li {
 .pricing_pruebagrat {
     height: 8%;
     width: 27%;
+
+    @media (width < 769px) {
+        height: 6%;
+        width: 90%;
+    }
 }
 
 h2.titulo_seccion {
