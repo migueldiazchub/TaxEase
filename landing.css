@@ -1,4 +1,4 @@
-/* 5450px para poner en píxeles, 440vh para ponerlo en referencia al viewport height de mi monitor*/
+/* 5450px para poner en píxeles, 496vh para ponerlo en viewport height*/
 
 body {
     height: 5450px;
@@ -175,10 +175,6 @@ strong {
     
     position: relative;
     align-content: center;
-
-    @media (width < 769px) {
-        
-    }
 }
 
 .feat_valueprop {
@@ -734,6 +730,10 @@ footer {
     height: 10%;
     background-color: black;
     color: white;
+
+    @media (width < 769px) {
+        height: 21%;
+    }
 }
 
 .footer_container {
@@ -748,6 +748,17 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @media (width < 769px) {
+        height: 40%;
+        width: 75%;
+        
+        top: 5%;
+
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .footer_izquierda {
@@ -757,6 +768,13 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media (width < 769px) {
+        height: 25%;
+        width: 100%;
+
+        align-items: center;
+    }
 }
 
 .footer_izquierda_elemento {
@@ -766,12 +784,20 @@ footer {
 
 #footer_titulo {
     font-size: 24px;
+
+    @media (width < 769px) {
+        font-size: 36px;
+    }
 }
 
 #footer_redes {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @media (width < 769px) {
+        width: 50%;
+    }
 }
 
 .footer_redes_icono {
@@ -789,6 +815,11 @@ img.iconos_redes {
     display: grid;
     grid-template: repeat(4, 1fr) / repeat(3, 24%);
     justify-content: space-between;
+
+    @media (width < 769px) {
+        height: 60%;
+        width: 100%;
+    }
 }
 
 .footer_grid_elemento {
