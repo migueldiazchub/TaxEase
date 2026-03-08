@@ -394,7 +394,9 @@ strong {
     text-align: center;
 
     position: relative;
-    top: 5%;
+    top: 16%;
+    
+    @media (width < 769px) { top: 5%; }
 }
 
 .testimonial_caja {
@@ -403,14 +405,15 @@ strong {
 
     margin: auto;
     position: relative;
-    top: 8%;
-
+    top: 28%;
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    
     @media (width < 769px) {
         height: 75%;
+        top: 8%;
         
         flex-direction: column;
     }
@@ -493,6 +496,7 @@ p.testimonial_textonombre {
     height: 15%;
 
    align-content: center; 
+   text-align: center;
 }
 
 .pricing_caja {
