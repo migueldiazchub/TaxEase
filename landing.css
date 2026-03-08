@@ -253,7 +253,7 @@ strong {
     justify-content: space-between;
 
     @media (width < 769px) {
-        height: 60%;
+        height: 65%;
         width: 80%;
         
         flex-direction: column;
@@ -394,7 +394,7 @@ strong {
     text-align: center;
 
     position: relative;
-    top: 16%;
+    top: 5%;
 }
 
 .testimonial_caja {
@@ -403,11 +403,17 @@ strong {
 
     margin: auto;
     position: relative;
-    top: 28%;
+    top: 8%;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @media (width < 769px) {
+        height: 75%;
+        
+        flex-direction: column;
+    }
 }
 
 .testimonial_tarjeta {
@@ -418,6 +424,11 @@ strong {
 
     background-color: #98BBC9;
     border-radius: 10px;
+
+    @media (width < 769px) {
+        height: 28%;
+        width: 100%;
+    }
 }
 
 .testimonial_content {
@@ -429,6 +440,10 @@ strong {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media (width < 769px) {
+        height: 65%;
+    }
 }
 
 .testimonial_content_cita {
@@ -443,23 +458,35 @@ strong {
     display: flex;
     flex-direction: row;
     justify-content: start;
+    align-items: center;
 }
 
 .testimonial_persona_imagen {
     height: 45px;
     width: 45px;
     border-radius: 100%;
+
+    @media (width < 769px) {
+        height: 30px;
+        width: 30px;
+    }
 }
 
 .testimonial_persona_nombre {
     margin-left: 16px;
+    align-content: center;
 }
 
 p.testimonial_textonombre {
     font-size: 16px;
     font-weight: 500;
 
-    margin-bottom: 7px;
+    margin: 0;
+}
+
+@media (width < 769px) {
+    p.testimonial_textocita { font-size: 12px }
+    p.testimonial_textonombre { font-size: 12px }
 }
 
 .pricing {
