@@ -307,6 +307,10 @@ strong {
     height: 17%;
 
     align-content: center;
+
+    @media (width < 769px) {
+        max-height: 15%;
+    }
 }
 
 .howitworks_caja {
@@ -319,6 +323,13 @@ strong {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    @media (width < 769px) {
+        height: 90%;
+        width: 90%;
+
+        flex-direction: column-reverse;
+    }
 }
 
 .howitworks_texto {
@@ -329,6 +340,11 @@ strong {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+    @media (width < 769px) {
+        height: 70%;
+        width: 100%;
+    }
 }
 
 .howitworks_texto_titulo {
@@ -342,6 +358,10 @@ strong {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media (width < 769px) {
+        height: 88%;
+    }
 }
 
 .howitworks_punto_texto {
@@ -356,6 +376,11 @@ strong {
     background-image: url(imagenes/dispositivos.jpg);
     background-size: cover;
     background-position: center;
+
+    @media (width < 769px) {
+        max-height: 25%;
+        width: 90%;
+    }
 }
 
 .testimonial {
