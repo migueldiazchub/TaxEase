@@ -29,6 +29,10 @@ header {
 
     font-size: 20px;
     font-weight: 500;
+
+    @media (width < 769px) {
+        font-size: 15px;
+    }
 }
 
 #header_titulo {
@@ -50,6 +54,10 @@ header {
 
     align-content: center;
     text-align: center;
+
+    @media (width < 769px) {
+        display: none;
+    }
 }
 
 a.header_nav_link {
@@ -61,11 +69,20 @@ a.header_nav_link {
 
 #header_item_boton {
     width: 22%;
+
+    @media (width < 769px) {
+        width: 100%;
+        display: block;
+    }
 }
 
 #header_boton {
     font-size: 16px;
     font-weight: 500;
+
+    @media (width < 769px) {
+        font-size: 12px;
+    }
 }
 
 button {
@@ -225,6 +242,7 @@ strong {
 
     @media (width < 769px) {
         height: 40%;
+        width: 100%;
         position: absolute;        
         position-anchor: --valueprop_imagen;
         align-self: anchor-center;
