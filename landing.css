@@ -177,6 +177,7 @@ p {
     font-size: 24px;
     margin-top: 0;
 
+    @media (width < 1921px) { font-size: 20px; }
     @media (width < 769px) { font-size: 16px; }
 }
 
